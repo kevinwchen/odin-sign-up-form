@@ -1,10 +1,14 @@
 * {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 
 body {
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
 .left-box, .right-box{
@@ -12,6 +16,40 @@ body {
     flex-direction: column;
 }
 
-.logo {
+.left-box {
+    display: flex;
+    width: 40vw;
+    height: 100%;
+    background: url(img/bg3.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.right-box {
+    display: flex;
+}
+.logo-box {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+}
+
+.logo-text {
     font-family: "Oxygen", sans-serif;
+}
+
+.bg-ref {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-ref-text {
+    position: absolute;
+    bottom: 1em;
+    font-size: 0.8em;
+}
+
+.bg-ref-text, .bg-ref-text>a, .bg-ref-text>a:visited {
+    color: white;
 }
