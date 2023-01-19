@@ -1,0 +1,15 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+}
+.logo {
+    font-family: "Oxygen", sans-serif;
+}
+
+.box-left {
+    display: flex;
+    background-color: aqua;
+}
