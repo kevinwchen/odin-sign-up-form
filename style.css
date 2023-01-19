@@ -1,15 +1,17 @@
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
     display: flex;
-}
-.logo {
-    font-family: "Oxygen", sans-serif;
+    flex-direction: row;
 }
 
-.box-left {
+.left-box, .right-box{
     display: flex;
-    background-color: aqua;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: "Oxygen", sans-serif;
 }
