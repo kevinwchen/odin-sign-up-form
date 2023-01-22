@@ -14,8 +14,9 @@
         <div class="split left">
             <div class="logo-box">
                 <div class="logo-img">
-                    <div class="logo-text">LOGO BRAND</div>
+                    <img id="logo" src="img/odin-lined.png" alt="Odin" />
                 </div>
+                <div class="logo-text">ODINSON</div>
             </div>
             <div class="bg-ref">
                 <div class="bg-ref-text">
@@ -52,6 +53,7 @@
                                     name="fname"
                                     id="fname"
                                     placeholder="Kevin"
+                                    title="Please enter your first name"
                                     required
                                 />
                             </div>
@@ -62,6 +64,7 @@
                                     name="lname"
                                     id="lname"
                                     placeholder="Chen"
+                                    title="Please enter your last name"
                                     required
                                 />
                             </div>
@@ -74,6 +77,7 @@
                                     name="email"
                                     id="email"
                                     placeholder="kevinchen@email.com"
+                                    title="Please enter your email, for example: kevinchen@email.com"
                                     required
                                 />
                             </div>
@@ -81,10 +85,12 @@
                             <div class="formfield phone">
                                 <label for="phone">Phone Number</label>
                                 <input
-                                    type="number"
+                                    type="tel"
                                     name="phone"
                                     id="phone"
-                                    placeholder="0123456789"
+                                    placeholder="0123-456-789"
+                                    pattern="\d{4}-\d{3}-\d{4}"
+                                    title="Please enter your phone number in the following format: 0123-456-789"
                                     required
                                 />
                             </div>
@@ -96,6 +102,8 @@
                                     type="password"
                                     name="pw1"
                                     id="pw1"
+                                    pattern="\d{4}-\d{3}-\d{4}"
+                                    title="Please enter your desired password"
                                     required
                                 />
                             </div>
@@ -105,6 +113,7 @@
                                     type="password"
                                     name="pw2"
                                     id="pw2"
+                                    title="Please confirm your password"
                                     required
                                 />
                             </div>
@@ -114,8 +123,10 @@
                 </form>
             </div>
             <div class="right-bot">
-                Already have an account?
-                <a href="https://www.theodinproject.com/">Log in</a>
+                <div class="right-login">
+                    Already have an account?
+                    <a href="https://www.theodinproject.com/">Log in</a>
+                </div>
             </div>
         </div>
     </body>

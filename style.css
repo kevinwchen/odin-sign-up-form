@@ -1,41 +1,63 @@
 * {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1em;
+    --split-ratio: 0.6;
 }
 
 body {
     display: flex;
+    flex: 1;
     flex-direction: row;
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
 
-.left-box, .right-box{
+.split {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    height: 100vh;
 }
 
-.left-box {
-    display: flex;
-    width: 40vw;
-    height: 100%;
+.left {
     background: url(img/bg3.jpg) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    flex: var(--split-ratio) var(--split-ratio) 0;
 }
 
-.right-box {
-    display: flex;
+.right {
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    flex: calc(1 - var(--split-ratio)) calc(1 - var(--split-ratio)) 0;
 }
+
 .logo-box {
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
     position: absolute;
     top: 30vh;
-    width: 100%;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    width: calc(100vw * var(--split-ratio));
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#logo {
+    width: auto;
+    height: 150px;
+    padding: 2em;
 }
 
 .logo-text {
     font-family: "Oxygen", sans-serif;
+    font-size: 72pt;
 }
 
 .bg-ref {
@@ -50,6 +72,74 @@ body {
     font-size: 0.8em;
 }
 
-.bg-ref-text, .bg-ref-text>a, .bg-ref-text>a:visited {
+.bg-ref-text,
+.bg-ref-text > a,
+.bg-ref-text > a:visited {
     color: white;
+}
+
+.right-herobox,
+.right-bot {
+    display: flex;
+    flex: 1;
+    background-color: rgb(231, 230, 230);
+}
+
+.right-herobox {
+    height: 40vh;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 20pt;
+    gap: 1em;
+}
+
+.right-formbox {
+    padding: 2em;
+}
+
+.form-heading {
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 180px;
+}
+
+button {
+    font-size: 16pt;
+    padding: 0.5em 2em;
+    margin: 1em;
+}
+
+.right-bot {
+    font-size: 16pt;
+    padding: 2em;
+}
+
+.right-login > a,
+.right-login > a:visited {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(0, 81, 255);
 }
