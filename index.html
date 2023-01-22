@@ -11,24 +11,112 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="left-box">
+        <div class="split left">
             <div class="logo-box">
-                <div class="logo-img"></div>
-                <div class="logo-text">LOGO</div>
+                <div class="logo-img">
+                    <div class="logo-text">LOGO BRAND</div>
+                </div>
             </div>
             <div class="bg-ref">
                 <div class="bg-ref-text">
-                    <!-- Photo by <a href="https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudio Schwarz</a> on <a href="https://unsplash.com/photos/hJqFSJhQrsw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-                    <!-- Photo by <a href="https://unsplash.com/@robertbye?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Bye</a> on <a href="https://unsplash.com/photos/xFunHeSh3kU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-                    Photo by <a href="https://unsplash.com/@robertbye?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Bye</a> on <a href="https://unsplash.com/photos/xFunHeSh3kU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    Photo by
+                    <a
+                        href="https://unsplash.com/@robertbye?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Robert Bye</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/xFunHeSh3kU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        >Unsplash</a
+                    >
                 </div>
             </div>
         </div>
-        
-        <div class="right-box">
-            <div class="right-subbox-top">1</div>
-            <div class="right-subbox-mid">2</div>
-            <div class="right-subbox-bot">3</div>
+        <div class="split right">
+            <div class="right-herobox">
+                <div class="right-herotext1">
+                    This is an example of a sign up form page made for The Odin
+                    Project. Sign up now and you will be blessed with good luck!
+                </div>
+                <div class="right-herotext2">Guaranteed fun times ahead.</div>
+            </div>
+            <div class="right-formbox">
+                <form action="https://www.theodinproject.com/" method="post">
+                    <div class="form-heading">Sign up today!</div>
+                    <div class="form-fields">
+                        <div class="form-row">
+                            <div class="formfield fname">
+                                <label for="fname">First Name</label>
+                                <input
+                                    type="text"
+                                    name="fname"
+                                    id="fname"
+                                    placeholder="Kevin"
+                                    required
+                                />
+                            </div>
+                            <div class="formfield lname">
+                                <label for="lname">Last Name</label>
+                                <input
+                                    type="text"
+                                    name="lname"
+                                    id="lname"
+                                    placeholder="Chen"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="formfield email">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="kevinchen@email.com"
+                                    required
+                                />
+                            </div>
+
+                            <div class="formfield phone">
+                                <label for="phone">Phone Number</label>
+                                <input
+                                    type="number"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="0123456789"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="formfield pw1">
+                                <label for="pw1">Password</label>
+                                <input
+                                    type="password"
+                                    name="pw1"
+                                    id="pw1"
+                                    required
+                                />
+                            </div>
+                            <div class="formfield fname">
+                                <label for="pw2">Confirm Password</label>
+                                <input
+                                    type="password"
+                                    name="pw2"
+                                    id="pw2"
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+            <div class="right-bot">
+                Already have an account?
+                <a href="https://www.theodinproject.com/">Log in</a>
+            </div>
         </div>
     </body>
 </html>
