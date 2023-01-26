@@ -6,17 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Odin Project Sign Up Form</title>
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&family=Roboto&display=swap");
         </style>
         <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="split left">
             <div class="logo-box">
                 <div class="logo-img">
-                    <img id="logo" src="img/odin-lined.png" alt="Odin" />
+                    <img id="logo" src="img/icon-snowflake.png" alt="Odin" />
                 </div>
-                <div class="logo-text">ODINSON</div>
+                <div class="logo-text">TIGNES</div>
             </div>
             <div class="bg-ref">
                 <div class="bg-ref-text">
@@ -42,7 +43,10 @@
                 <div class="right-herotext2">Guaranteed fun times ahead.</div>
             </div>
             <div class="right-formbox">
-                <form action="https://www.theodinproject.com/" method="post">
+                <form
+                    action="https://kevinwchen.github.io/odin-sign-up-form/"
+                    method="post"
+                >
                     <div class="form-heading">Sign up today!</div>
                     <div class="form-fields">
                         <div class="form-row">
@@ -88,32 +92,29 @@
                                     type="tel"
                                     name="phone"
                                     id="phone"
-                                    placeholder="0123-456-789"
-                                    pattern="\d{4}-\d{3}-\d{4}"
-                                    title="Please enter your phone number in the following format: 0123-456-789"
+                                    placeholder="0412 345 678"
+                                    pattern="\d{4} \d{3} \d{3}"
+                                    title="Please enter your phone number in the following format: 0412 345 678"
                                     required
                                 />
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="formfield pw1">
+                            <div class="formfield password">
                                 <label for="pw1">Password</label>
                                 <input
                                     type="password"
-                                    name="pw1"
-                                    id="pw1"
-                                    pattern="\d{4}-\d{3}-\d{4}"
-                                    title="Please enter your desired password"
+                                    name="password"
+                                    id="password"
                                     required
                                 />
                             </div>
-                            <div class="formfield fname">
+                            <div class="formfield password_confirm">
                                 <label for="pw2">Confirm Password</label>
                                 <input
                                     type="password"
-                                    name="pw2"
-                                    id="pw2"
-                                    title="Please confirm your password"
+                                    name="password_confirm"
+                                    id="password_confirm"
                                     required
                                 />
                             </div>
@@ -127,6 +128,7 @@
                     Already have an account?
                     <a href="https://www.theodinproject.com/">Log in</a>
                 </div>
+                <div class="right-footer">Made by Kevin.</div>
             </div>
         </div>
     </body>

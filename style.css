@@ -25,6 +25,7 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
     flex: var(--split-ratio) var(--split-ratio) 0;
+    flex-wrap: wrap;
 }
 
 .right {
@@ -37,6 +38,7 @@ body {
 .logo-box {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     margin: 0 auto;
     position: absolute;
     top: 30vh;
@@ -46,7 +48,7 @@ body {
     width: calc(100vw * var(--split-ratio));
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 1em;
 }
 
 #logo {
@@ -56,7 +58,7 @@ body {
 }
 
 .logo-text {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Libre Bodoni", serif;
     font-size: 72pt;
 }
 
@@ -90,18 +92,22 @@ body {
     padding: 2em;
     flex-direction: column;
     justify-content: flex-end;
-    font-weight: 600;
     font-size: 20pt;
     gap: 1em;
 }
 
+.right-herotext2 {
+    font-style: italic;
+}
+
 .right-formbox {
-    padding: 2em;
+    padding: 1em;
 }
 
 .form-heading {
     font-size: 20pt;
     font-weight: 600;
+    padding: 1em;
 }
 
 .form-fields {
@@ -113,6 +119,7 @@ body {
 .form-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1em;
     margin: 1em;
 }
@@ -128,18 +135,31 @@ input {
 
 button {
     font-size: 16pt;
-    padding: 0.5em 2em;
+    padding: 0.5em 1.5em;
     margin: 1em;
 }
 
 .right-bot {
-    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
     padding: 2em;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.right-login {
+    font-size: 16pt;
 }
 
 .right-login > a,
 .right-login > a:visited {
+    font-size: 16pt;
     text-decoration: none;
     font-weight: 800;
     color: rgb(0, 81, 255);
+}
+
+.right-footer {
+    font-size: 1em;
+    text-align: center;
 }
